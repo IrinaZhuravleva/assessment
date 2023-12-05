@@ -23,7 +23,6 @@ export class LoginPage {
     await this.loginInput.fill(process.env.LOGIN);
     await this.passwordInput.fill(process.env.PASSWORD);
     await this.loginBtn.click();
-
     await this.welcomeHeader.isVisible();
   }
 }
