@@ -8,6 +8,12 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    env:
+      PASSWORD: ${{ secrets.PASSWORD }}
+      LOGIN: ${{ secrets.LOGIN }}
+      PHONE: ${{ secrets.PHONE }}
+      USERNAME: ${{ secrets.USERNAME }}
+
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
